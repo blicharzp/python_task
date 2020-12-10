@@ -1,5 +1,5 @@
 """Data parser and unifier for various bank entires.
-supported version of python: 3.7 or higher. It is related to the ordering mechanism of elements in dict
+supported version of python: 3.8 or higher. It is related to the ordering mechanism of elements in dict and adding xml header to output
 usage: data_parser.py [-h] [-t {csv,json,xml}] [-p PATH] input_files [input_files ...]
 example usage: python3 data_parser.py bank1.csv bank2.csv bank3.csv -t csv
 """
@@ -199,7 +199,7 @@ def save_to_file(content: List[dict], path: str, type_: str) -> None:
 
 
 def save_to_csv_file(content: List[dict], path: str) -> None:
-    """save_to_csv_file saves formmated content to inputted path output as csv file
+    """save_to_csv_file saves formatted content to inputted path output as csv file
     :param content: content to save
     :type content:  List[dict]
     :param path: path where to save content
@@ -214,7 +214,7 @@ def save_to_csv_file(content: List[dict], path: str) -> None:
 
 
 def save_to_json_file(content: List[dict], path: str) -> None:
-    """save_to_json_file saves formmated content to inputted path output as json file
+    """save_to_json_file saves formatted content to inputted path output as json file
     :param content: content to save
     :type content:  List[dict]
     :param path: path where to save content
@@ -225,7 +225,7 @@ def save_to_json_file(content: List[dict], path: str) -> None:
 
 
 def save_to_xml_file(content: List[dict], path: str) -> None:
-    """save_to_xml_file saves formmated content to inputted path output as xml file
+    """save_to_xml_file saves formatted content to inputted path output as xml file
     :param content: content to save
     :type content:  List[dict]
     :param path: path where to save content

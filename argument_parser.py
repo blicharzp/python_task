@@ -19,5 +19,5 @@ def argument_parser() -> argparse.Namespace:
     args = parser.parse_args()
     for filename in args.input_files:
         if not os.path.exists(filename):
-            parser.error(f"File: {filename} does not exist")
+            parser.error(f"File: {filename} does not exist.")
     return args

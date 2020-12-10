@@ -21,4 +21,4 @@ python3 -m unittest -v tests_data_parser.py
 ```
 
 ### Requirements
-Python: 3.7 or higher. It is related to the ordering mechanism of elements in dict
+Python: 3.8 or higher. It is related to the ordering mechanism of elements in dict and adding xml header to output
